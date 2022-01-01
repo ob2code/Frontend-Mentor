@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link href="css/output.css" rel="stylesheet" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Four card feature section</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,16 +28,71 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+
+      .xx {
+        color: hsl(234, 12%, 34%);
+        color: hsl(229, 6%, 66%);
+        color: hsl(0, 0%, 98%);
+      }
     </style>
   </head>
-  <body>
-    Hi Reliable, efficient delivery Powered by Technology Our Artificial
-    Intelligence powered tools use millions of project data points to ensure
-    that your project is successful Supervisor Monitors activity to identify
-    project roadblocks Team Builder Scans our talent network to create the
-    optimal team for your project Karma Regularly evaluates our talent to ensure
-    quality Calculator Uses data from past projects to provide better delivery
-    estimates
+  <body class="font-Poppins bg-very-light-gray text-grayish-blue px-4 py-8">
+    <header class="text-center">
+      <div class="text-2xl font-medium">Reliable, efficient delivery</div>
+      <div class="text-2xl text-very-dark-blue font-semibold mt-1 mb-3">
+        Powered by Technology
+      </div>
+      <p class="mb-10">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </header>
+
+    <main>
+      <div class="card--container">
+        <div class="bg-pri-cyan w-full h-1"></div>
+        <section class="card">
+          <h2>Supervisor</h2>
+          <p>Monitors activity to identify project roadblocks</p>
+          <div>
+            <img src="images/icon-supervisor.svg" alt="Supervisor" />
+          </div>
+        </section>
+      </div>
+
+      <div class="card--container">
+        <div class="bg-pri-red w-full h-1"></div>
+        <section class="card">
+          <h2>Team Builder</h2>
+          <p>
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <div>
+            <img src="images/icon-team-builder.svg" alt="Team Builder" />
+          </div>
+        </section>
+      </div>
+      <div class="card--container">
+        <div class="bg-pri-orange w-full h-1"></div>
+        <section class="card">
+          <h2>Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <div><img src="images/icon-karma.svg" alt="Karma" /></div>
+        </section>
+      </div>
+      <div class="card--container">
+        <div class="bg-pri-blue w-full h-1"></div>
+        <section class="card">
+          <h2>Calculator</h2>
+          <p>
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <div>
+            <img src="images/icon-calculator.svg" alt="Karma" />
+          </div>
+        </section>
+      </div>
+    </main>
 
     <footer>
       <p class="attribution">
