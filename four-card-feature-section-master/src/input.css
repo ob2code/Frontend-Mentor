@@ -4,7 +4,7 @@
 
 @layer components {
   .card--container {
-    @apply rounded-md overflow-hidden drop-shadow-lg m-4;
+    @apply rounded-md overflow-hidden shadow-lg shadow-blue-400/20 m-4 max-w-[350px];
   }
   .card {
     @apply bg-white p-8;

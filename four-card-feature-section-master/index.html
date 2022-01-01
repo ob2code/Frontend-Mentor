@@ -36,19 +36,28 @@
       }
     </style>
   </head>
-  <body class="font-Poppins bg-very-light-gray text-grayish-blue px-4 py-8">
+  <body
+    class="
+      font-Poppins
+      bg-very-light-gray
+      text-grayish-blue
+      px-4
+      py-8
+      md:flex md:flex-col md:items-center md:justify-center md:h-screen
+    "
+  >
     <header class="text-center">
       <div class="text-2xl font-medium">Reliable, efficient delivery</div>
       <div class="text-2xl text-very-dark-blue font-semibold mt-1 mb-3">
         Powered by Technology
       </div>
-      <p class="mb-10">
+      <p class="mb-10 max-w-xl">
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </p>
     </header>
 
-    <main>
+    <main class="flex flex-col md:flex md:flex-row items-center justify-center">
       <div class="card--container">
         <div class="bg-pri-cyan w-full h-1"></div>
         <section class="card">
@@ -59,26 +68,28 @@
           </div>
         </section>
       </div>
-
-      <div class="card--container">
-        <div class="bg-pri-red w-full h-1"></div>
-        <section class="card">
-          <h2>Team Builder</h2>
-          <p>
-            Scans our talent network to create the optimal team for your project
-          </p>
-          <div>
-            <img src="images/icon-team-builder.svg" alt="Team Builder" />
-          </div>
-        </section>
-      </div>
-      <div class="card--container">
-        <div class="bg-pri-orange w-full h-1"></div>
-        <section class="card">
-          <h2>Karma</h2>
-          <p>Regularly evaluates our talent to ensure quality</p>
-          <div><img src="images/icon-karma.svg" alt="Karma" /></div>
-        </section>
+      <div class="">
+        <div class="card--container">
+          <div class="bg-pri-red w-full h-1"></div>
+          <section class="card">
+            <h2>Team Builder</h2>
+            <p>
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <div>
+              <img src="images/icon-team-builder.svg" alt="Team Builder" />
+            </div>
+          </section>
+        </div>
+        <div class="card--container">
+          <div class="bg-pri-orange w-full h-1"></div>
+          <section class="card">
+            <h2>Karma</h2>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <div><img src="images/icon-karma.svg" alt="Karma" /></div>
+          </section>
+        </div>
       </div>
       <div class="card--container">
         <div class="bg-pri-blue w-full h-1"></div>
@@ -99,7 +110,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/ob2code">ob2code</a>.
       </p>
     </footer>
   </body>
