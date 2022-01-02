@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card--container {
+    @apply rounded-md overflow-hidden shadow-lg shadow-blue-400/20 m-4 max-w-[350px];
+  }
+  .card {
+    @apply bg-white p-8;
+  }
+  .card h2 {
+    @apply text-xl font-semibold text-very-dark-blue;
+  }
+  .card p {
+    @apply text-sm mt-2 mb-6;
+  }
+
+  .card div {
+    @apply flex flex-row-reverse;
+  }
+}
