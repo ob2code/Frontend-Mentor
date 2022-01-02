@@ -467,6 +467,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: row-reverse;
 }
 
+.clear-both {
+  clear: both;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -477,6 +486,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {
@@ -530,6 +547,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-pri-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(212 86% 64% / var(--tw-bg-opacity));
+}
+
+.bg-slate-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
 .px-4 {
@@ -595,6 +617,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .md\:justify-center {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:justify-center {
     justify-content: center;
   }
 }
