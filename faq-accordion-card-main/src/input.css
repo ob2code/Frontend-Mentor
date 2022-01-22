@@ -2,21 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .card--container {
-    @apply rounded-md overflow-hidden shadow-lg shadow-blue-400/20 m-4 max-w-[350px];
-  }
-  .card {
-    @apply bg-white p-8;
-  }
-  .card h2 {
-    @apply text-xl font-semibold text-very-dark-blue;
-  }
-  .card p {
-    @apply text-sm mt-2 mb-6;
-  }
+.question {
+  @apply flex justify-between items-center cursor-pointer;
+}
 
-  .card div {
-    @apply flex flex-row-reverse;
-  }
+.question--active {
+  @apply font-semibold;
+}
+
+.question--active img {
+  @apply rotate-180;
+}
+
+.answer--active {
+  @apply block;
+}
+
+.question--active p {
+  @apply font-semibold;
+}
+
+.question:first-child {
+  @apply hover:text-pri-txt-red;
+}
+
+article {
+  @apply py-4 border-div-blue border-b-[1px];
+}
+
+article p {
+  @apply pt-4 hidden pr-4 text-nue-txt-blue;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

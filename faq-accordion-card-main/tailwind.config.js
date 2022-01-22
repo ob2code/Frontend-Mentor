@@ -8,11 +8,11 @@ module.exports = {
         "nue-txt-very-blue": "hsl(237, 12%, 33%)",
         "nue-txt-blue": "hsl(240, 6%, 50%)",
         "div-blue": "hsl(240, 5%, 91%)",
-        "soft-violet": "hsl(229, 6%, 66%)",
+        "soft-violet": "hsl(273, 75%, 66%)",
         "soft-blue": "hsl(240, 73%, 65%)",
       },
       fontFamily: {
-        Poppins: ['"Poppins"', "sans-serif"],
+        KumbhSans: ['"Kumbh Sans"', "sans-serif"],
       },
     },
   },
