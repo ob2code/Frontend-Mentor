@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.resposivebg {
+  background-image: url("/images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 1200px) {
+  .resposivebg {
+    background-image: url("/images/bg-desktop.svg");
+    background-size: cover;
+  }
+}
