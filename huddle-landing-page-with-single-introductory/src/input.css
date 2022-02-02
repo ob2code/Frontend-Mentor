@@ -10,7 +10,45 @@
 
 @media screen and (min-width: 1200px) {
   .resposivebg {
-    background-image: url("/images/bg-desktop.svg");
-    background-size: cover;
+    /* background-image: url("/images/bg-desktop.svg");
+    background-size: cover; */
+    animation: bgmove 2s forwards;
+  }
+
+  @keyframes bgmove {
+    from {
+      background-size: cover;
+      background-color: hsl(257, 40%, 49%);
+    }
+
+    to {
+      background: url("/images/bg-desktop.svg");
+      background-size: cover;
+      background-color: hsl(257, 40%, 49%);
+    }
+  }
+
+  .mockup {
+    animation: mockupmove 1s forwards;
+  }
+  @keyframes mockupmove {
+    from {
+      transform: translateX(-10em);
+    }
+    to {
+      transform: translateX(0em);
+    }
+  }
+
+  .para {
+    animation: paramove 1s forwards;
+  }
+  @keyframes paramove {
+    from {
+      transform: translateX(-20em);
+    }
+    to {
+      transform: translateX(0em);
+    }
   }
 }
