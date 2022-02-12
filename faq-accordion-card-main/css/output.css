@@ -449,6 +449,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mt-28 {
   margin-top: 7rem;
 }
@@ -469,12 +474,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[inherit\] {
+  height: inherit;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
+.min-h-\[calc\(100vh_-_47px\)\] {
+  min-height: calc(100vh - 47px);
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[70vw\] {
+  width: 70vw;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.min-w-\[350px\] {
+  min-width: 350px;
 }
 
 .max-w-\[360px\] {
@@ -487,6 +516,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[80\%\] {
   max-width: 80%;
+}
+
+.max-w-\[900px\] {
+  max-width: 900px;
 }
 
 .-translate-x-\[15\%\] {
@@ -519,8 +552,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
+.-translate-y-20 {
+  --tw-translate-y: -5rem;
+  transform: var(--tw-transform);
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
+            animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
+            animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.animate-bounce {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .overflow-hidden {
@@ -536,6 +611,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-orange-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 237 213 / var(--tw-bg-opacity));
+}
+
+.bg-green-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -549,12 +634,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: hsl(240, 73%, 65%);
 }
 
+.bg-\[length\:250\%\] {
+  background-size: 250%;
+}
+
+.bg-\[length\:80\%\] {
+  background-size: 80%;
+}
+
 .bg-\[right_5rem_bottom_-10rem\] {
   background-position: right 5rem bottom -10rem;
 }
 
+.bg-\[position\:100\%_68\%\] {
+  background-position: 100% 68%;
+}
+
+.bg-\[center_top\] {
+  background-position: center top;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {
@@ -593,6 +698,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: hsl(237 12% 33% / var(--tw-text-opacity));
 }
+
+/* .question__title {
+  @apply flex justify-between items-center cursor-pointer;
+}
+.question__content {
+  @apply hidden;
+} */
 
 .question {
   display: flex;
@@ -649,6 +761,39 @@ article p {
   color: hsl(228, 45%, 44%);
 }
 
+.box-animation {
+  -webkit-animation-name: zoom-in-out;
+          animation-name: zoom-in-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes zoom-in-out {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes zoom-in-out {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
@@ -683,11 +828,19 @@ article p {
     align-items: center;
   }
 
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:pl-0 {
     padding-left: 0px;
   }
 
   .lg\:pr-14 {
     padding-right: 3.5rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 }

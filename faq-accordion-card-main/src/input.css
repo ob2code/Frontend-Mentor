@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .question__title {
+  @apply flex justify-between items-center cursor-pointer;
+}
+.question__content {
+  @apply hidden;
+} */
+
 .question {
   @apply flex justify-between items-center cursor-pointer;
 }
@@ -41,4 +48,21 @@ article p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.box-animation {
+  animation-name: zoom-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes zoom-in-out {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
 }

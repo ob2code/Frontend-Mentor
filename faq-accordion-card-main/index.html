@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link href="css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <script src="scripts/main.js"></script>
     <link
       rel="icon"
@@ -28,7 +29,7 @@
     class="font-KumbhSans bg-gradient-to-b from-soft-violet to-soft-blue bg-no-repeat px-4 py-8 min-h-screen text-pri-txt-blue"
   >
     <main
-      class="rounded-lg bg-white px-4 mt-28 relative max-w-[360px] mx-auto lg:flex lg:items-center lg:max-w-screen-lg lg:h-[460px] lg:pl-0 lg:pr-14"
+      class="rounded-lg bg-white px-4 mt-28 relative max-w-[360px] mx-auto lg:flex lg:max-w-screen-lg lg:h-[460px] lg:pl-0 lg:pr-14"
     >
       <div
         class="hidden lg:block lg:flex-1 bg-no-repeat h-full bg-[right_5rem_bottom_-10rem]"
@@ -43,7 +44,11 @@
             />
           </div>
           <div class="translate-y-[30%] -translate-x-[50%] absolute">
-            <img src="images/illustration-box-desktop.svg" alt="" />
+            <img
+              class="animate__animated animate__fadeInLeft"
+              src="images/illustration-box-desktop.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -62,7 +67,9 @@
         />
       </div>
       <div class="-translate-y-14 lg:translate-y-0 lg:flex-1">
-        <h1 class="text-xl font-bold text-nue-txt-very-blue text-center mb-4">
+        <h1
+          class="text-xl font-bold text-nue-txt-very-blue text-center mb-4 lg:pt-10"
+        >
           FAQ
         </h1>
         <article>
