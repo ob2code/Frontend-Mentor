@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.resposivebg {
+	background-image: url('images/bg-intro-mobile.png');
+}
+
+@media screen and (min-width: 1200px) {
+	.resposivebg {
+		background-image: url('images/bg-intro-desktop.png');
+	}
+}
+
+form p {
+	@apply text-pri-red text-right italic text-sm mt-2;
+}
