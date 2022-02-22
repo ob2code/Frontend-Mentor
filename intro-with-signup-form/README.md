@@ -39,8 +39,8 @@ Desktop version
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/ob2code/frontend-mentor/tree/main/intro-with-signup-form)
+- Live Site URL: [https://intro-with-signup-form-sigma.vercel.app/](https://intro-with-signup-form-sigma.vercel.app/)
 
 ## My process
 

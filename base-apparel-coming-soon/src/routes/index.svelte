@@ -7,16 +7,16 @@
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </svelte:head>
 
-<div
+<main
   class="min-h-screen text-desaturated-red  
   font-JosefinSans  bg-gradient-to-b from-gra-m-from to-gra-m-to lg:bg-orange-800"
 >
   <div class="min-h-screen   ">
     <div class="min-h-screen lg:flex lg:flex-row-reverse ">
       <div class="lg:hidden">
-        <div class="logo__mobile py-8 pl-8">
+        <header class="logo__mobile py-8 pl-8">
           <img class="" src="images/logo.svg" alt="logo" />
-        </div>
+        </header>
         <div class="">
           <img class="w-full" src="images/hero-mobile.jpg" alt="hero" />
         </div>
@@ -60,4 +60,4 @@
       </div>
     </div>
   </div>
-</div>
+</main>
